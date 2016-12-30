@@ -4,4 +4,6 @@ Used statistical modeling, data mining, web scraping &amp; APIs to create a Pyth
 
 
 
-Created a GUI. Uploaded to Heroku using Flask.
+Created a GUI. Uploaded to Heroku using Flask. 
+
+Due to Heroku timeout restrictions, this may timeout, but try again!
