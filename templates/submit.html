@@ -1,0 +1,136 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+  <head>
+    <!-- ==============================================
+	Title and basic Meta Tags
+	=============================================== -->
+    <meta charset="utf-8">
+    <title>Samara | Responsive 404 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="TheThemeLab">
+	
+	<!-- ==============================================
+	Mobile Metas
+	=============================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  		
+					
+	<!-- ==============================================
+	Google Fonts
+	=============================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css' />		
+    <link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+    <!-- ==============================================
+	CSS
+	=============================================== -->           
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">       
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">       
+    <!-- Default style color-->  
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">  
+    <!-- ./Default style color--> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}"> 
+  </head>
+  
+  <body class="preload">     
+    <div class="full-width"> 
+    <!-- Start Container-->    
+    <div class="container content-inner">
+      <div class="row content">        
+        <div class="col-md-12">
+          <!-- Start 404 TEXT-->        
+          <section class="main">
+            <h2 class="top-title">					
+              Will They Play?
+			</h2>
+          </section> 
+          <!-- End 404 TEXT-->
+          <!-- Main TEXT-->       
+           <section class="desc animated Out">    
+            <h4>{{answer}}</h4>
+          </section>
+		  <hr>
+          <!-- End Main TEXT-->
+          <!-- Search form-->
+		  <h2 class="top-title" style="font-size:20pt">Search Again?</h2>
+          <section class="search animated Out">
+            <form method="post" id="search" action="{{ url_for('hello') }}">
+       	       <input type="text" placeholder="Please enter band name..." size="40" name="bandname"><br><br>
+               <input type="submit" class="submit" value="Find Out!">
+            </form>
+		  </section>
+          <!-- End Search form-->
+        </div> 
+      </div> 
+    </div>         
+    <!-- End Container -->
+    </div>                        
+    <!--Footer-->             
+    <div class="footer row">      
+	  <div class="container">
+	    <div class="col-md-6 right">
+		  <!-- Nav -->
+	      <nav>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Contact</a>
+		  </nav>
+		  <!-- End Nav -->
+        </div>
+	    <div class="col-md-6 clear">
+		  <!-- Social Icons -->
+		  <div class="social-icons">
+            <ul>
+			    <li class="twitter" style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/techandallcom" target="_blank">Twitter</a>
+			    </li>
+
+				<li class="facebook" style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/techandallcom" target="_blank">Facebook</a>
+				</li>
+
+				<li class="googleplus " style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/techandallcom" target="_blank">Google +r</a>
+				</li>
+
+				<li class="pinterest" style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/techandallcom" target="_blank">Pinterest</a>
+				</li>
+
+				<li class="linkedin" style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/techandallcom" target="_blank">LinkedIN</a>
+				</li>
+				
+				<li class="skype" style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/techandallcom" target="_blank">Skype</a>
+				</li>
+
+				<li class="rss" style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/techandallcom" target="_blank">RSS Feed</a>
+				</li>
+			</ul>
+		  </div>
+		  <!-- End Social Icons -->
+		  <!-- Copyright Text -->   
+		  <div class="copyright">Copyright &copy; 2014 <a href="#">Samara 404</a>. All Rights Reserved.</div>        
+          <!-- End Copyright Text -->               
+	    </div>	    
+	  </div>
+    </div>
+    <!-- End Footer -->
+      
+    <!-- ==============================================
+	  JS
+	  =============================================== -->   
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>     
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.lettering.js') }}"></script> 	  
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>     
+    <script type="text/javascript" src="{{ url_for('static', filename='js/init.js') }}"></script>     
+  </body>
+</html>

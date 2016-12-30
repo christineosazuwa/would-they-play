@@ -1,0 +1,13 @@
+Flask
+gunicorn
+requests
+bs4
+pandas
+spotipy
+sklearn
+numpy
+pylast
+discogs_client
+musicbrainzngs
+statsmodels
+pygn

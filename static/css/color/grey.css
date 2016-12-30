@@ -1,0 +1,17 @@
+/*
+SAMARA
+Color: Grey
+*/
+.full-width{
+background-color: #353B49;
+}
+.desc h4{
+	color: #ffffff;
+}
+.desc h4 a {
+		color: #cccccc;
+}
+.desc h4 a:hover {
+		color: #ffffff;
+}
+

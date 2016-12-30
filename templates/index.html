@@ -1,0 +1,124 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+  <head>
+    <!-- ==============================================
+	Title and basic Meta Tags
+	=============================================== -->
+    <meta charset="utf-8">
+    <title>Will They Play? | A Python App by Christine Osazuwa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="TheThemeLab">
+	
+	<!-- ==============================================
+	Mobile Metas
+	=============================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  		
+					
+	<!-- ==============================================
+	Google Fonts
+	=============================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css' />		
+    <link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+    <!-- ==============================================
+	CSS
+	=============================================== -->           
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">       
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">       
+    <!-- Default style color-->  
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">  
+    <!-- ./Default style color--> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}"> 
+  </head>
+  
+  <body class="preload">     
+    <div class="full-width"> 
+    <!-- Start Container-->    
+    <div class="container content-inner">
+      <div class="row content">        
+        <div class="col-md-12">
+          <!-- Start 404 TEXT-->        
+          <section class="main">
+            <h2 class="top-title">					
+              Would They Play?
+			</h2>
+          </section> 
+          <!-- End 404 TEXT-->
+          <!-- Main TEXT-->       
+          <section class="desc animated Out">    
+            <h4>Given data from the top music databases (<a href="http://developer.spotify.com" target="_blank">Spotify</a>, <a href="http://last.fm/api" target="_blank">Last.fm</a>, 
+			<a href="https://musicbrainz.org/doc/Development" target="_blank">MusicBrainz</a>, <a href="https://developer.gracenote.com/" target="_blank">Gracenote</a>) can I predict the likelihood of them playing major music festivals?<br>
+			<small>(Right now it's just Warped Tour but I'm working on adding in several more)</small></h4>
+          </section>
+          <!-- End Main TEXT-->
+          <!-- Search form-->
+          <section class="search animated Out">
+            <form method="post" id="search" action="{{ url_for('hello') }}">
+       	       <input type="text" placeholder="Please enter band name..." size="40" name="bandname"><br><br>
+               <input type="submit" class="submit" value="Find Out!"><br><br>
+			   <em style="color:#fff; font-variant:italic">(This takes some time, so be patient...)</em>
+            </form>
+		  </section>
+          <!-- End Search form-->
+        </div> 
+      </div> 
+    </div>         
+    <!-- End Container -->
+    </div>                        
+    <!--Footer-->             
+    <div class="footer row">      
+	  <div class="container">
+	    <div class="col-md-6 right">
+		  <!-- Nav -->
+	      <nav>
+			<strong>Other Music Apps:</strong> 
+			<a href="https://who-played.herokuapp.com/">Who Played?</a>
+			<a href="https://spotify-festival-playlists.herokuapp.com/">Spotify Festival Playlist</a>
+		  </nav>
+		  <!-- End Nav -->
+        </div>
+	    <div class="col-md-6 clear">
+		  <!-- Social Icons -->
+		  <div class="social-icons">
+            <ul>
+
+				<li class="github" style="background-color: #f0f0f0">
+				  <a href="https://github.com/christineosazuwa" target="_blank">Github</a>
+				</li>
+				
+				<li class="twitter" style="background-color: #f0f0f0">
+				  <a href="http://www.twitter.com/c_osazuwa" target="_blank">Github</a>
+				</li>
+
+				<li class="linkedin" style="background-color: #f0f0f0">
+				  <a href="http://www.linkedin.com/in/christineosazuwa" target="_blank">LinkedIN</a>
+				</li>
+
+			</ul>
+		  </div>
+		  <!-- End Social Icons -->
+		  <!-- Copyright Text -->   
+		  <div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://christineosazuwa.com">Christine Osazuwa</a><br>
+		  Written in Python 2.7, Powered by <a href="http://heroku.com">Heroku</a> & Flask<br>
+		  <a href="#">View on GitHub</a> | <a href="#">Download Presentation</a> </div>        
+          <!-- End Copyright Text -->               
+	    </div>	    
+	  </div>
+    </div>
+    <!-- End Footer -->
+      
+    <!-- ==============================================
+	  JS
+	  =============================================== -->   
+    <script type="text/javascript" src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>     
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.lettering.js') }}"></script> 	  
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>     
+    <script type="text/javascript" src="{{ url_for('static', filename='js/init.js') }}"></script>     
+  </body>
+</html>

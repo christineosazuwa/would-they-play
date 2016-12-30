@@ -1,0 +1,16 @@
+/*
+SAMARA
+Color: Pink
+*/
+.full-width{
+background-color: #D3304D;
+}
+.desc h4{
+	color: #cccccc;
+}
+.desc h4 a {
+		color: #fff;
+}
+.desc h4 a:hover {
+		color: #cccccc;
+}

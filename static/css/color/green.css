@@ -1,0 +1,16 @@
+/*
+SAMARA
+Color: Green
+*/
+.full-width{
+background-color: #28AE60;
+}
+.desc h4{
+	color: #ffffff;
+}
+.desc h4 a {
+		color: #cccccc;
+}
+.desc h4 a:hover {
+		color: #ffffff;
+}
